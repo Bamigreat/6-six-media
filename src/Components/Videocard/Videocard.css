@@ -1,0 +1,53 @@
+.video-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0px 15px;
+  margin-bottom: 2.5rem;
+}
+
+.video-potrait-wrapper {
+  width: 93.75rem;
+}
+.middle-video-container {
+  width: 143.75rem;
+}
+
+.potrait-video {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.bottow-margin {
+  margin-top: 0.9rem;
+}
+
+.middle-video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 37.5em) {
+  .video-container {
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0px 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .potrait-video {
+    border-radius: 0.5rem;
+  }
+
+  .video-potrait-wrapper {
+    width: 98.75rem;
+  }
+
+  .middle-video {
+    border-radius: 0.5rem;
+  }
+
+  .bottow-margin {
+    margin-top: 0.3rem;
+  }
+}
