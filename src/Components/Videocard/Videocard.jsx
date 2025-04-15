@@ -1,7 +1,7 @@
 import React from "react";
 import "./Videocard.css";
-import Gridvideo from "../../assets/videos/My Intro video_compress_1.mp4";
-import Gridvideo2 from "../../assets/videos/Upwork Edit_compress_edit.mp4";
+import Gridvideo from "../../assets/videos/intro.mp4";
+import Gridvideo2 from "../../assets/videos/Upwork.mp4";
 
 const Videocard = () => {
   return (
