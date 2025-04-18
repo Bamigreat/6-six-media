@@ -12,7 +12,8 @@ const Videocard = () => {
             <video
               className="potrait-video"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -26,7 +27,8 @@ const Videocard = () => {
             <video
               className="middle-video bottow-margin"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -36,7 +38,8 @@ const Videocard = () => {
             <video
               className="middle-video bottow-margin"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -49,7 +52,8 @@ const Videocard = () => {
             <video
               className="potrait-video"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -65,7 +69,8 @@ const Videocard = () => {
             <video
               className="middle-video bottow-margin"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -75,7 +80,8 @@ const Videocard = () => {
             <video
               className="middle-video bottow-margin"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -88,7 +94,8 @@ const Videocard = () => {
             <video
               className="potrait-video"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
@@ -102,13 +109,13 @@ const Videocard = () => {
             <video
               className="potrait-video"
               playsInline
-              autoPlay
+              preload="metadata"
+              loading="lazy"
               loop
               muted
               controls
             >
               <source src={Gridvideo2} type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           </div>
         </div>
