@@ -11,93 +11,105 @@ const Videocard = () => {
           <div className="video-potrait-wrapper">
             <video
               className="potrait-video"
-              src={Gridvideo2}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="middle-video-container ">
             <video
-              className="middle-video"
-              src={Gridvideo}
-              typeof="video/mp4"
+              className="middle-video bottow-margin"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo} type="video/mp4" />
+            </video>
             <video
               className="middle-video bottow-margin"
-              src={Gridvideo}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo} type="video/mp4" />
+            </video>
           </div>
 
           <div className="video-potrait-wrapper">
             <video
               className="potrait-video"
-              src={Gridvideo2}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
         <div className="video-container">
           <div className="video-grid ">
             <video
-              className="middle-video"
-              src={Gridvideo}
-              typeof="video/mp4"
+              className="middle-video bottow-margin"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo} type="video/mp4" />
+            </video>
             <video
               className="middle-video bottow-margin"
-              src={Gridvideo}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo} type="video/mp4" />
+            </video>
           </div>
 
           <div className="video-potrait-wrapper ">
             <video
               className="potrait-video"
-              src={Gridvideo2}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="video-potrait-wrapper ">
             <video
               className="potrait-video"
-              src={Gridvideo2}
-              typeof="video/mp4"
+              playsInline
               autoPlay
               loop
               muted
               controls
-            ></video>
+            >
+              <source src={Gridvideo2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

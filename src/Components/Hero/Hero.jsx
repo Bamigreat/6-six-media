@@ -6,14 +6,21 @@ const Hero = () => {
   return (
     <div className="hero-section-shadow">
       <div className="hero-container">
-        <video
-          className="herovideo"
-          src={coverVideo}
-          typeof="video/mp4"
+        <video className="herovideo" playsInline autoPlay loop muted>
+          <source src={coverVideo} type="video/mp4" />
+        </video>
+
+        {/* <video
+          className="potrait-video"
+          playsInline
           autoPlay
           loop
           muted
-        ></video>
+          controls
+        >
+          <source src={Gridvideo2} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> */}
 
         <div className="hero-section-heading">
           <h1>
