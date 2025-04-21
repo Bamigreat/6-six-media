@@ -65,7 +65,7 @@ const Videocard = () => {
         </div>
 
         <div className="video-container">
-          <div className="video-grid ">
+          <div className="middle-video-container  ">
             <video
               className="middle-video bottow-margin"
               playsInline

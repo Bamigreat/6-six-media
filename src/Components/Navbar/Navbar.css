@@ -85,12 +85,19 @@ nav ul a:hover::after {
     right: -100%;
     bottom: 0;
     /* background: #b82727; */
-    background: hsl(0 0% 100/0.1);
+    background: hsl(0 0% 0%/0.8);
     backdrop-filter: blur(16px);
     opacity: 1;
     width: 250px;
     padding: 3.5rem 2.5rem;
     transition: 0.5s ease;
+  }
+
+  @supports (backdrop-filter: blur(16px)) {
+    .moble-nav-bar {
+      background: hsl(0 0% 100%/0.1);
+      backdrop-filter: blur(16px);
+    }
   }
 
   .nav-home {
