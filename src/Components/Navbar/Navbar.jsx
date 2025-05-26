@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/6-Circle-Media-WHITE.png";
 
 const Navbar = () => {
@@ -13,21 +14,32 @@ const Navbar = () => {
       <div>
         <div className={`moble-nav-bar ${click ? "hide-mobile-menu" : ""}`}>
           <ul className="nav-home">
-            <a href="/" onClick={closeMobileMenu}>
-              Home
-            </a>
-            <a href="/" onClick={closeMobileMenu}>
-              Portfolio
-            </a>
-            <a href="/" onClick={closeMobileMenu}>
-              Information
-            </a>
-            <a href="/" onClick={closeMobileMenu}>
-              Contact
-            </a>
-            <a href="/" onClick={closeMobileMenu}>
-              Shop
-            </a>
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                Porfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                Information
+              </Link>
+            </li>
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                Shop
+              </Link>
+            </li>
           </ul>
           <div>
             <p className="btn mobile-btn-hidden" onClick={closeMobileMenu}>

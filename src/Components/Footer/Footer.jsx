@@ -6,7 +6,10 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container">
-        <p>Copyright @ {currentDate} 6 Circle Media Production</p>
+        <p>
+          <i class="fa-regular fa-copyright"></i> {currentDate} 6 Circle Media
+          Production
+        </p>
       </div>
     </>
   );

@@ -10,13 +10,13 @@ nav {
   z-index: 10;
 }
 
-nav ul a {
+nav ul li {
   display: inline-block;
   position: relative;
   margin: 5px 30px;
 }
 
-nav ul a:after {
+nav ul li:after {
   content: "";
   position: absolute;
   background-color: rgb(255, 255, 255);
@@ -27,7 +27,7 @@ nav ul a:after {
   transition: all 0.5s ease-out;
 }
 
-nav ul a:hover::after {
+nav ul li:hover::after {
   width: 100%;
 }
 .moble-nav-bar {

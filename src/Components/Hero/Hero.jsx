@@ -10,18 +10,6 @@ const Hero = () => {
           <source src={coverVideo} type="video/mp4" />
         </video>
 
-        {/* <video
-          className="potrait-video"
-          playsInline
-          autoPlay
-          loop
-          muted
-          controls
-        >
-          <source src={Gridvideo2} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
-
         <div className="hero-section-heading">
           <h1>
             Bringing stories to life,<br></br> one frame at a time

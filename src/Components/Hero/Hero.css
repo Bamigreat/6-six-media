@@ -34,7 +34,7 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 0.5rem;
-  z-index: 700000000;
+  /* z-index: 700000000; */
 }
 
 .hero-section-heading-paragraph {
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 37.5em) {
   .hero-container {
-    height: 29dvh;
+    height: 29vh;
   }
 
   .hero-section-heading {

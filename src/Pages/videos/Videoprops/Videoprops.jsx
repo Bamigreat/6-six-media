@@ -1,14 +1,12 @@
-import React, { useRef, useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import "./Videocard.css";
-import Gridvideo from "../../assets/videos/intro.mp4";
-import Gridvideo2 from "../../assets/videos/upwork.mp4";
-import Poster1 from "../../assets/images/portrait_thumbnail.png";
-import Poster2 from "../../assets/images/intro_thumbnail.png";
+import React from "react";
+import "./Videoprops.css";
 
-const Videocard = () => {
-  const videoRef = useRef(null);
+import Gridvideo from "../../../assets/videos/intro.mp4";
+import Gridvideo2 from "../../../assets/videos/upwork.mp4";
+import Poster1 from "../../../assets/images/portrait_thumbnail.png";
+import Poster2 from "../../../assets/images/intro_thumbnail.png";
 
+function Videoprops() {
   return (
     <>
       <div className="wrapper">
@@ -143,6 +141,6 @@ const Videocard = () => {
       </div>
     </>
   );
-};
+}
 
-export default Videocard;
+export default Videoprops;
