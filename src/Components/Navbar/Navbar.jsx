@@ -21,7 +21,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/" onClick={closeMobileMenu}>
+              <Link to="/videos" onClick={closeMobileMenu}>
                 Porfolio
               </Link>
             </li>
