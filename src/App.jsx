@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Videocard from "./Components/Videocard/Videocard";
 import About from "./Components/About/About";
-import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/videos/Videos";
 
 import "./App.css";
@@ -15,7 +14,6 @@ function App() {
       <Hero />
       <Videocard />
       <About />
-      <Footer />
     </>
   );
 }

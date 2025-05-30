@@ -1,97 +1,135 @@
+.hero-section-shadow {
+  position: relative;
+  z-index: 1; /* Below navbar (z-index: 100) and mobile menu (z-index: 200) */
+}
+
 .hero-container {
   position: relative;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Darker overlay for better text contrast */
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .herovideo {
   object-fit: cover;
   width: 100%;
+  height: 100%; /* Ensure video fills the container */
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
-  overflow: hidden;
+  z-index: -1; /* Behind the overlay */
+}
+
+.hero-description {
+  padding-top: 8rem;
 }
 
 .hero-section-heading {
   color: white;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding-block-start: 28.125rem;
   font-weight: 100;
-  line-height: 0.8;
+  line-height: 1;
   letter-spacing: 0.1rem;
 }
 
 .hero-section-heading h1 {
-  /* font-size: 4rem; */
-  font-size: 0.9rem;
-  font-size: clamp(0.9rem, -0.20338983050847437rem + 4.670433145009416vw, 4rem);
+  font-size: clamp(1.5rem, 2vw + 1rem, 4rem); /* Responsive font size */
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-bottom: 0.5rem;
-  /* z-index: 700000000; */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Improve readability */
 }
 
 .hero-section-heading-paragraph {
   color: white;
   text-align: center;
-  font-size: 1.2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 37.5em) {
+/* Tablet screens (768px to 1024px) */
+@media (min-width: 48em) and (max-width: 64em) {
   .hero-container {
-    height: 29vh;
+    height: 45vh; /* Slightly shorter for tablets */
+  }
+
+  .hero-description {
+    padding-top: 6.5rem;
   }
 
   .hero-section-heading {
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding-block-start: 7.2rem;
-    line-height: 0.8;
-    letter-spacing: 0.01rem;
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
   }
 
   .hero-section-heading h1 {
-    font-size: 0.9rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-bottom: 0.3rem;
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 2.5rem);
+    margin-bottom: 0.8rem;
   }
 
   .hero-section-heading-paragraph {
-    font-size: 0.4rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    width: 100%;
+    padding: 0 1rem;
   }
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 37.5em) {
+  .hero-container {
+    height: 35vh; /* Adjusted for better fit */
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay on mobile */
+  }
+
+  .hero-description {
+    padding-top: 3rem;
+  }
+
   .hero-section-heading {
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding-block-start: 190px;
-    line-height: 0.8;
-    letter-spacing: 0.01rem;
+    width: 95%;
+    line-height: 1;
+    letter-spacing: 0.02rem;
   }
 
   .hero-section-heading h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
+    font-size: clamp(1.2rem, 3vw + 0.5rem, 1.5rem); /* Larger for readability */
+    margin-bottom: 0.5rem;
   }
 
   .hero-section-heading-paragraph {
-    font-size: 0.8rem;
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    width: 100%;
+    padding: 0 3.5rem;
   }
-} */
+}
 
-@media (max-width: 37.5em) {
+/* Larger screens (min-width: 1200px) */
+@media (min-width: 75em) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .hero-section-heading h1 {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+  }
+
+  .hero-section-heading-paragraph {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  }
 }
